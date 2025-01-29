@@ -1,8 +1,8 @@
-function calculateGWA() {
-    // Get the name input from the user
-    const name = document.getElementById('name').value;
+function addStudentRecord() {
+    const lastName = document.getElementById('lname').value.trim();
+    const firstName = document.getElementById('fname').value.trim();
+    const middleName = document.getElementById('mname').value.trim();
 
-    // Retrieve and parse grades from the input fields
     const grades = [
         parseFloat(document.getElementById('sub1').value),
         parseFloat(document.getElementById('sub2').value),
@@ -11,37 +11,50 @@ function calculateGWA() {
         parseFloat(document.getElementById('sub5').value)
     ];
 
-    // Check if any of the grades are invalid (not a number)
-    if (grades.some(isNaN)) {
-        // Display an error message if any input is invalid
-        document.getElementById('result').textContent = 'Please enter all grades correctly.';
-        return; // Exit the function early
+    if (!lastName || !firstName || !middleName || grades.some(isNaN)) {
+        alert('Please fill out all fields correctly.');
+        return;
     }
 
-    const sum = grades.reduce((total, grade) => total + grade, 0);
+    const totalGrades = grades.reduce((sum, grade) => sum + grade, 0);
+    const gwa = (totalGrades / grades.length).toFixed(2);
 
-    const gwa = (sum / grades.length).toFixed(2);
+    const student = { lastName, firstName, middleName, grades, gwa };
+    const students = JSON.parse(localStorage.getItem('students')) || [];
 
-    document.getElementById('result').textContent = `${name}, your General Weighted Average (GWA) is: ${gwa}`;
+    students.push(student);
+    localStorage.setItem('students', JSON.stringify(students));
+
+    document.getElementById('gradeForm').reset();
+    displayStudentRecords();
 }
 
-function calculateGWA() {
-    const name = document.getElementById('name').value;
-
-    const grades = [
-        parseFloat(document.getElementById('gradrwe1').value),
-        parseFloat(document.getElementById('grade2').value),
-    ];
-
-    if (grades.some(isNaN)) {
-        document.getElementById('result').textContent = 'Please enter all grades correctly.';
-        return; 
-    }
-
-    const sum = grades.reduce((total, grade) => total + grade, 0);
-
-    const gwa = (sum / grades.length).toFixed(2);
-
-    document.getElementById('result').textContent = `${name}, your General Weighted Average (GWA) is: ${gwa}`;
+function deleteStudent(index) {
+    const students = JSON.parse(localStorage.getItem('students')) || [];
+    students.splice(index, 1);
+    localStorage.setItem('students', JSON.stringify(students));
+    displayStudentRecords();
 }
 
+function displayStudentRecords() {
+    const students = JSON.parse(localStorage.getItem('students')) || [];
+    const tableBody = document.getElementById('studentTableBody');
+    tableBody.innerHTML = '';
+
+    students.forEach((student, index) => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${student.lastName}, ${student.firstName} ${student.middleName}</td>
+            <td>${student.grades[0]}</td>
+            <td>${student.grades[1]}</td>
+            <td>${student.grades[2]}</td>
+            <td>${student.grades[3]}</td>
+            <td>${student.grades[4]}</td>
+            <td>${student.gwa}</td>
+            <td><button class="delete-btn" onclick="deleteStudent(${index})">Delete</button></td>
+        `;
+        tableBody.appendChild(row);
+    });
+}
+
+window.onload = displayStudentRecords;

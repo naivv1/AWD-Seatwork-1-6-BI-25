@@ -59,20 +59,14 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
-
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+This web application allows users to manage student records by adding, displaying, and deleting student information, including their grades for five subjects. The app calculates the Grade Weighted Average (GWA) for each student based on the grades entered for the five subjects.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+Single Page Website: The Grade Management system is a single-page website where users can add, view, and delete student records without navigating away from the page.
+Local Storage: Uses browser’s local storage to persist student data across sessions.
+Grade Calculation: Automatically calculates the Grade Weighted Average (GWA) for each student based on their subject grades.
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -92,27 +86,14 @@ Guiding Question:
 7. File Structure to follow below.
 
 ```
-WD-ProjectName
-└─ assets
-|   └─ css
-|   |   └─ style.css
-|   └─ img
-|   |   └─ fileWith.jpeg/.jpg/.webp/.png
-|   └─ js
-|       └─ script.js
-└─ pages
-|  └─ pageName
-|     └─ assets
-|     |  └─ css
-|     |  |  └─ style.css
-|     |  └─ img
-|     |  |  └─ fileWith.jpeg/.jpg/.webp/.png
-|     |  └─ js
-|     |     └─ script.js
-|     └─ index.html
-└─ index.html
-└─ readme.md
-```
+/grade-management-system
+  ├── assets
+  │   ├── css
+  │   │   └── style.css       # Stylesheet for the webpage
+  │   └── js
+  │       └── script.js       # JavaScript for managing student records
+  ├── index.html              # Home page with general information
+  ├── studentrecord.html             # Page for managing student records
 
 ## Resources
 

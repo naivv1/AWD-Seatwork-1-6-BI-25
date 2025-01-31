@@ -100,4 +100,5 @@ Grade Calculation: Automatically calculates the Grade Weighted Average (GWA) for
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Grade Management System | Sample purpose would be here like this and this is the example of what it is. |https://naivv1.github.io/AWD-Seatwork-1-6-BI-25/ |
+| Grade Management System |   A simple webpage that let's you manage student grades.
+ |https://naivv1.github.io/AWD-Seatwork-1-6-BI-25/ |

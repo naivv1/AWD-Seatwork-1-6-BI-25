@@ -100,4 +100,4 @@ Grade Calculation: Automatically calculates the Grade Weighted Average (GWA) for
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Grade Management System | Sample purpose would be here like this and this is the example of what it is. |https://naivv1.github.io/AWD-Seatwork-1-6-BI-25/ |

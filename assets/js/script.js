@@ -16,7 +16,11 @@ function addStudentRecord() {
         return;
     }
 
-    const totalGrades = grades.reduce((sum, grade) => sum + grade, 0);
+    let totalGrades = 0;
+    for (const grade of grades) {
+        totalGrades += grade;
+    }
+
     const gwa = (totalGrades / grades.length).toFixed(2);
 
     const student = { lastName, firstName, middleName, grades, gwa };

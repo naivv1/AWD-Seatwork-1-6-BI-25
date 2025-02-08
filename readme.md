@@ -88,7 +88,6 @@ Grade Calculation: Automatically calculates the Grade Weighted Average (GWA) for
   │   └── js
   │       └── script.js       # JavaScript for managing student records
   ├── index.html              # Home page with general information
-  ├── studentrecord.html             # Page for managing student records
 
 ## Resources
 

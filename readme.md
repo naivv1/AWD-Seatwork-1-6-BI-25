@@ -4,32 +4,27 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
-  <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+  <a href="https://github.com/naivv1/AWD-Seatwork-1-6-BI-25">
+    <img src="./assets/img/galaxylogo.png" alt="Nyebe" width="130" height="100">
   </a>
-<!-- TODO: Change Title to the name of the title of your Project -->
   <h3 align="center">Grade Management System</h3>
 </div>
-<!-- TODO: Make a short description -->
 <div align="center">
   A simple webpage that let's you manage student grades.
 </div>
 
 <br />
 
-<!-- TODO: Change the zyx-0314 into your github username  -->
-<!-- TODO: Change the WD-Template-Project into the same name of your folder -->
+
 ![](https://visit-counter.vercel.app/counter.png?page=naivv1/AWD-Seatwork-1-6-BI-25)
 
-[![wakatime](https://wakatime.com/badge/github/naivv1/AWD-Seatwork-1-6-BI-25.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8)
-
+[![wakatime](https://wakatime.com/badge/user/7f0b295f-8a55-4698-9065-a47b10681ce4/project/56d2b959-480a-4b3a-9646-bc0a35342b1f.svg)](https://wakatime.com/badge/user/7f0b295f-8a55-4698-9065-a47b10681ce4/project/56d2b959-480a-4b3a-9646-bc0a35342b1f)
 ---
 
 <br />
 <br />
 
-<!-- TODO: If you want to add more layers for your readme -->
+
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -57,19 +52,19 @@
 
 ## Overview
 
-<!-- TODO: To be changed -->
+
 <!-- The following are just sample -->
 This web application allows users to manage student records by adding, displaying, and deleting student information, including their grades for five subjects. The app calculates the Grade Weighted Average (GWA) for each student based on the grades entered for the five subjects.
 
 ### Key Components
-<!-- TODO: List of Key Components -->
+
 <!-- The following are just sample -->
 Single Page Website: The Grade Management system is a single-page website where users can add, view, and delete student records without navigating away from the page.
 Local Storage: Uses browser’s local storage to persist student data across sessions.
 Grade Calculation: Automatically calculates the Grade Weighted Average (GWA) for each student based on their subject grades.
 
 ### Technology
-<!-- TODO: List of Technology Used -->
+
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
@@ -97,8 +92,7 @@ Grade Calculation: Automatically calculates the Grade Weighted Average (GWA) for
 
 ## Resources
 
-<!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Grade Management System |   A simple webpage that let's you manage student grades.
- |https://naivv1.github.io/AWD-Seatwork-1-6-BI-25/ |
+| CSS Templates |   For CSS and HTML Templates
+ |https://www.w3schools.com/w3css/w3css_templates.asp|
